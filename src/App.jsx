@@ -1,3 +1,11 @@
+import Foreground from "./Foreground";
+import Background from "./components/Background";
+
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="relative w-full h-screen bg-zinc-800">
+      <Background />
+      <Foreground />
+    </div>
+  );
 }
